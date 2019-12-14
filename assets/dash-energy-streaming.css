@@ -1,0 +1,90 @@
+body{
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #222;
+}
+.plot-container {
+	flex:1;
+}
+.absoluteCenter {
+ /* Must manually set width/height */
+ width: calc(100vw - 50px);
+ height: calc(100vh - 45px);
+
+ /* The magic centering code */
+ margin:auto;
+ position:absolute;
+ top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+ left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+ /* Prevent div from overflowing main window */
+ max-width:100%;
+ max-height:100%;
+ overflow:auto;
+}
+.flexFill{
+	display:flex;
+	flex-direction:column;
+	flex:1;
+}
+.banner {
+    height: 75px;
+    margin: 0px -10px 10px;
+    background-color: rgb(66, 196, 247);
+    border-radius: 2px;
+}
+
+.number {
+	text-align:center;
+	font-size: 5rem;
+	font-weight:400;
+    color: rgb(66, 196, 247);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.banner h2{
+    color: white;
+    padding-top: 10px;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+.banner Img{
+    position: relative;
+    float: right;
+    right: 10px;
+    height: 75px;
+}
+
+.energy-power-row .Title{
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.energy-power-row .Title h3{
+    font-size: 1.75rem;
+    color: rgb(66, 196, 247);
+    border-bottom: rgb(216, 216, 216);
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.energy-power-row {
+    border-radius: 5px;
+    border-width: 1px 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: initial;
+    border-left-style: solid;
+    border-top-color: rgb(216, 216, 216);
+    border-right-color: rgb(216, 216, 216);
+    border-bottom-color: initial;
+    border-left-color: rgb(216, 216, 216);
+    border-image: initial;
+}
+.energy-power-row:last-child{
+	border-bottom-color: rgb(216, 216, 216);
+	border-bottom-style: solid;
+}
